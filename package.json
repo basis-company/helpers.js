@@ -1,0 +1,38 @@
+{
+  "name": "helpers",
+  "version": "0.1.1",
+  "description": "shared javascript toolkit",
+  "type": "module",
+  "exports": {
+    "./": "./src/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basis-company/helpers.js.git"
+  },
+  "keywords": [
+    "toolkit",
+    "tools",
+    "string",
+    "number",
+    "array",
+    "object",
+    "function",
+    "date"
+  ],
+  "author": {
+    "name": "Ilya Anisimov",
+    "email": "litstat@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basis-company/helpers.js/issues"
+  },
+  "homepage": "https://github.com/basis-company/helpers.js#readme",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}
