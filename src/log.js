@@ -34,6 +34,8 @@ export function log() {
   if (enabled) {
     _info.apply(c, parse(this, arguments));
   }
+
+  return enabled;
 }
 
 export function debug() {
@@ -42,6 +44,8 @@ export function debug() {
   if (enabled > 1) {
     (enabled > 2 ? _trace : _debug).apply(c, parse(this, arguments));
   }
+
+  return enabled;
 }
 
 function parse(scope, args) {
@@ -75,6 +79,9 @@ applyOwn(log, {
 
   enable: (level = 1) =>
     enabled = level,
+
+  enabled: () =>
+    enabled,
 
   disable: () =>
     enabled = 0,

@@ -3,7 +3,7 @@ import isNumber from 'underscore/modules/isNumber.js';
 import noop from 'underscore/modules/noop.js';
 
 import { applyOwn } from './apply';
-import { isObject } from './is.js';
+import { isObject } from './is';
 import { warn } from './log';
 
 const o = {
