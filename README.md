@@ -111,14 +111,16 @@ round2(n)
 
 #### array
 ```js
-append(a = [])
+append(a, add)
+appendShallow(a, ...add)
 array(a = [])
 countBy(a, k)
 fields(columns, ...add)
 groupBy(a, k, v)
 indexBy(a, k, v)
 partition(a, fn)
-prepend(a = [])
+prepend(a, add)
+prependShallow(a, ...add)
 remove(a, v, all)
 transform(a, fn, buf = [])
 uniq(a)
