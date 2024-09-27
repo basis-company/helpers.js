@@ -1,4 +1,4 @@
-import { append } from './append';
+import { appendShallow } from './append';
 import { uniq } from './uniq';
 
 /**
@@ -8,7 +8,7 @@ export function fields(columns, ...add) {
   var buf = [];
 
   _fields(columns, buf);
-  append(buf, add);
+  appendShallow(buf, add);
 
   return uniq(buf);
 }
