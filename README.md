@@ -188,6 +188,7 @@ warn()
 #### promise
 ```js
 sleep(ms)
+stop()
 ```
 
 #### renderer
